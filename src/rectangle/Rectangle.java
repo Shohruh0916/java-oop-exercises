@@ -13,11 +13,11 @@ class Rectangle {
         this.width=width;
     }
 
-    void getPerimeter() {
-        System.out.println(2*(width+height));
+    double getPerimeter() {
+        return 2*(width+height);
     }
 
-    void getArea() {
-        System.out.println(width*height);
+    double getArea() {
+        return width*height;
     }
 }

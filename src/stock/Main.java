@@ -3,6 +3,6 @@ package stock;
 public class Main {
     public static void main(String[] args) {
         Stock stock=new Stock(34.35,34.5,"Corporation","ORCL");
-        stock.getChangePrecent();
+        System.out.println("stock.getChangePrecent:"+stock.getChangePrecent());
     }
 }

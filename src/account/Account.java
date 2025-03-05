@@ -16,23 +16,19 @@ class Account {
         this.annualInterestRate=annualInterestRate;
     }
 
-    void getMonthlyInterestRate(){
-        System.out.println("getMonthlyInterest:"+annualInterestRate/12);
+    double getMonthlyInterestRate(){
+        return annualInterestRate/12;
     }
 
-    void getMonthlyInterest(){
-        System.out.println("getMonthlyInterest:"+balance*annualInterestRate/100);
+    double getMonthlyInterest(){
+        return balance*annualInterestRate/100;
     }
 
-    void withdraw(int a){
-        if (a>balance) {
-            System.out.println("Insufficient balance!");
-        }else{
-            balance-=a;
-        }
+    double withdraw(int a){
+        return balance=-a;
     }
 
-    void deposit(int b){
-        balance+=b;
+    double deposit(int a){
+        return balance+=a;
     }
 }

@@ -13,9 +13,7 @@ class Stock {
         this.praviousClosingPrice=praviousClosingPrice;
     }
 
-    void getChangePrecent(){
-        System.out.println(((currentPrice - praviousClosingPrice) / praviousClosingPrice) * 100);
+    double getChangePrecent(){
+        return ((currentPrice - praviousClosingPrice) / praviousClosingPrice) * 100;
     }
-
-
 }
