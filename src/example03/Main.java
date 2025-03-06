@@ -9,5 +9,6 @@ public class Main {
         System.out.println(r1.getWidth());
         System.out.println(r1.getArea());
         System.out.println(r1.getPerimeter());
+
     }
 }
