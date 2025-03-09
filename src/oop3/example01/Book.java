@@ -1,5 +1,4 @@
 package oop3.example01;
-
 public class Book extends Author{
     private Author author;
     private double price;
@@ -8,12 +7,11 @@ public class Book extends Author{
     public Book(String name,Author author, double price) {
         super(name, author.getEmail(), author.getGender());
         this.author = author;
-        this.qty = qty;
         this.price=price;
     }
 
     public Book(String name, Author author,double price, int qty) {
-        super(author.getName(), author.getEmail(), author.getGender());
+        super(name, author.getEmail(), author.getGender());
         this.author = author;
         this.price = price;
         this.qty = qty;
