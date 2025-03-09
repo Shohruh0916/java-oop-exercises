@@ -1,26 +1,22 @@
 package oop3.example01;
 
-public class Book  {
-    private String name;
+public class Book extends Author{
     private Author author;
-    double price;
-    int qty=0;
+    private double price;
+    private int qty;
 
-    Book(String  name,Author author,double price){
-        this.name=name;
-        this.author=author;
+    public Book(String name,Author author, double price) {
+        super(name, author.getEmail(), author.getGender());
+        this.author = author;
+        this.qty = qty;
         this.price=price;
     }
 
-    Book(String name,Author author,double price,int qty){
-        this.qty=qty;
-        this.name=name;
-        this.author=author;
-        this.price=price;
-    }
-
-    public String getName() {
-        return name;
+    public Book(String name, Author author,double price, int qty) {
+        super(author.getName(), author.getEmail(), author.getGender());
+        this.author = author;
+        this.price = price;
+        this.qty = qty;
     }
 
     public Author getAuthor() {
@@ -43,7 +39,10 @@ public class Book  {
         this.qty = qty;
     }
 
+    @Override
     public String toString() {
-        return name+" "+(author.name+" "+author.email+" "+author.gender)+" "+price+" "+qty;
+        return "Book[ " +
+                "name=" + getName() +
+                super.toString();
     }
 }
