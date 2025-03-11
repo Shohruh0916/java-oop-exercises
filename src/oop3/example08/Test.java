@@ -1,6 +1,6 @@
 package oop3.example08;
 
-public class Test {
+public class  Test {
     public static void main(String[] args) {
                 MyPoint p1 = new MyPoint(3, 4);
                 MyCircle circle1 = new MyCircle(p1, 5);
