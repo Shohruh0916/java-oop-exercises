@@ -9,7 +9,7 @@ public class Student {
     private double feesPaid=0;
     private School school;
 
-    Student(int id,String firstName,String lastName,int grade,double feesTotal){
+    public Student(int id, String firstName, String lastName, int grade, double feesTotal){
         this.id=id;
         this.firstName=firstName;
         this.lastName=lastName;
@@ -38,7 +38,7 @@ public class Student {
         return (int) feesTotal;
     }
 
-    double getRemainingFees(){
+    public double getRemainingFees(){
         return  feesTotal-feesPaid;
     }
 
@@ -46,7 +46,7 @@ public class Student {
         this.grade=grade;
     }
 
-    String  getName(){
+    public String  getName(){
         return firstName+" "+lastName;
     }
 

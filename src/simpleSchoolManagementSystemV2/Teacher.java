@@ -49,7 +49,7 @@ public class Teacher {
         return salaryEarned;
     }
 
-    void receivSalary(){
+    public void receivSalary(){
         salaryEarned+=salary;
     }
 
