@@ -1,4 +1,4 @@
-package simpleSchoolManagementSystem;
+package simpleSchoolManagementSystemV2;
 
 public class Student {
     private int id;

@@ -1,4 +1,4 @@
-package simpleSchoolManagementSystem;
+package simpleSchoolManagementSystemV2;
 
 public class School {
     private Teacher[] teachers;
@@ -7,8 +7,8 @@ public class School {
     private int studentsCount=0;
 
     School(){
-        this.teachers=new Teacher[100];
-        this.students=new Student[100];
+        this.teachers=new Teacher[10];
+        this.students=new Student[10];
     }
 
     public Teacher[] getTeachers() {
@@ -28,10 +28,12 @@ public class School {
     }
 
     double getToatalMoneySpent(){
-        return  0;
+        double totalMoneySpent=0;
+        for(int i=0; i<teachersCount; i++){
+            totalMoneySpent+=teachers[i].getSalaryEarned();
+        }
+        return  totalMoneySpent;
     }
-
-
 
     void addTeacher(Teacher teacher){
         teachers[teachersCount++]=teacher;
